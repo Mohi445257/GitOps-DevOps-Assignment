@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wedo-demo
+  labels:
+    app: wedo-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wedo-demo
+  template:
+    metadata:
+      labels:
+        app: wedo-demo
+    spec:
+      containers:
+      - name: wedo
+        # THIS IS A PLACEHOLDER. The CI will replace __IMAGE__ with the full image:tag
+        image: __IMAGE__
+        ports:
+        - containerPort: 3000
+        env:
+          - name: GIT_SHA
+            value: "__IMAGE_TAG__"
