@@ -1,7 +1,8 @@
 FROM node:18-alpine
+
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --production
+RUN npm install --production    # 🔥 replace npm ci
 COPY . .
 ENV PORT=3000
 EXPOSE 3000
