@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: wedo
-        # THIS IS A PLACEHOLDER. The CI will replace __IMAGE__ with the full image:tag
-        image: __IMAGE__
+        # THIS IS A PLACEHOLDER. The CI will replace yasin445257/wedevs-devops-assignment:c444879eecfd89496453eeae1776d0e83c97efd1 with the full image:tag
+        image: yasin445257/wedevs-devops-assignment:c444879eecfd89496453eeae1776d0e83c97efd1
         ports:
         - containerPort: 3000
         env:
           - name: GIT_SHA
-            value: "__IMAGE_TAG__"
+            value: "c444879eecfd89496453eeae1776d0e83c97efd1"
