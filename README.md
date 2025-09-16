@@ -1,4 +1,4 @@
-# weDevs - DevOps Assignment (example repo)
+
 
 ## What this repo contains
 - `app/` - tiny Node.js app + Dockerfile
